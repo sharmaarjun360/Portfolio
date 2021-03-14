@@ -4,7 +4,7 @@ const AboutMe = () => {
     return (
         <div className="conatainer py-5">
             <div className="row">
-            {/* large 6  xxtra small*/}
+            {/* lg=large  xm= xtra small*/}
                 <div className="col-lg-6 col-xm-12">
                 <div className="photo-wrap mb-5">
                     <img className="profile-img" src={auther} alt="Arjun Sharma..."/>
