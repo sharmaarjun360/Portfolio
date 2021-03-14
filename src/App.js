@@ -13,16 +13,16 @@ function App() {
     params={{
       particles:{
         number: {
-          value: 30,
+          value: 50,
         density:{
           enable:true,
-          value_area: 900
+          value_area: 949
         }
       },
       shape:{
-        type:"circle",
+        type:"triangle",
         stroke:{
-          width: 4,
+          width: 2,
           color:"#0055ff"
         }
       }
