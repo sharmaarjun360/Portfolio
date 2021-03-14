@@ -1,9 +1,40 @@
 import './App.css';
-// /Users/arjunsharma/Documents/Projects/SorceTreeVault/Portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css   
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
+import Particals from "react-particles-js";
+import AboutMe from "./Components/AboutMe";
+
 function App() {
   return (
-   <h2> Portfolio project...</h2>
+    <>
+    <Particals
+    className="particles-canvas"
+    params={{
+      particles:{
+        number: {
+          value: 50,
+        density:{
+          enable:true,
+          value_area: 949
+        }
+      },
+      shape:{
+        type:"triangle",
+        stroke:{
+          width: 2,
+          color:"#0055ff"
+        }
+      }
+      }
+    }}
+    />
+
+<Navbar/>
+   <Header/>
+   <AboutMe/>
+   
+   </>
   );
 }
 
