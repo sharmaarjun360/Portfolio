@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root{
-  --primary_red: #f56;
+  --primary_red: #ff0000;
   --primary_hover_red: #f33501;
   --primary_orange: #f9ab00;
   --primary_white:rgba(255,255,255,1);
-  --primary_light-grey:#f1f1f1;
+  --primary_light_grey:#f1f1f1;
+  --primary_grey:#ccd1d9;
+  --primary_dark_grey:#666666;
   /* --primary_dark:rgba(255,255,255,0); */
   /* --primary_dark:rgb(0,0,0); */
   --primary_dark:rgba(0,0,0,.85);
+  
 }
 body{
   font-family: "Roboto Condensed" sans-serif !important;
@@ -180,12 +183,13 @@ border-top: 0.1875rem solid var(--primary_orange);
 .Services{
   text-align: center;
   padding-bottom: 2rem;
-  background-color: var(--primary_light-grey);
+  /* background-color: var(--primary_light_grey); */
 }
 
 .Services h1{
   color: var (var(--primary_dark));
   text-transform: uppercase;
+  color: var(--primary_orange);
 }
 
 .Services .circle{
@@ -232,3 +236,70 @@ border-bottom: 0.3125rem solid var(--primary_dark);
   .Services .box:hover h3{
         color: var(--primary_white);
         }
+/************************ Experience *********************************/
+
+.experience {
+  padding: 0.7rem;
+}
+
+.experience-wrapper {
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden;
+}
+
+.experience h1 {
+  text-transform: uppercase;
+  color: var(--primary_orange);
+}
+
+.experience-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background: var(--primary_grey);
+  z-index: 1;
+}
+
+.timeline-block{
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.3125rem solid var(--primary_dark);
+  background-color: var(--primary_orange);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--primary_dark_grey);
+  direction: ltr;
+}
+
+.timeline-content h3 {
+  margin-top: 0.3125rem;
+  color: var(--primary_red);
+  font-weight: 900;
+}
